@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-06-01 16:58:21 by Eclipse SUMO netedit Version 1.23.1
+<!-- generated on 2025-06-01 20:22:12 by Eclipse SUMO netedit Version v1_23_1+0308-0738807fd8c
 -->
 
 <neteditConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
 
     <input>
+        <sumocfg-file value="crossroads.sumocfg"/>
         <route-files value="crossroads.rou.xml"/>
         <sumo-net-file value="crossroads.net.xml"/>
     </input>
@@ -28,9 +29,5 @@
     <pedestrian>
         <walkingareas value="0"/>
     </pedestrian>
-
-    <netedit>
-        <new-network value="false"/>
-    </netedit>
 
 </neteditConfiguration>

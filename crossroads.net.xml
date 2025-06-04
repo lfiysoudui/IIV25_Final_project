@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 2025-06-01 17:23:56 by Eclipse SUMO netedit Version 1.23.1
+<!-- generated on 2025-06-01 20:22:06 by Eclipse SUMO netedit Version v1_23_1+0308-0738807fd8c
 <neteditConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
 
     <input>
-        <sumocfg-file value="C:\Users\User\ntu\IIV-Final\crossroads.sumocfg"/>
-        <route-files value="C:\Users\User\ntu\IIV-Final\crossroads.rou.xml"/>
-        <sumo-net-file value="C:\Users\User\ntu\IIV-Final\crossroads.net.xml"/>
+        <sumocfg-file value="/Users/lfiysoudui/Desktop/school/csie/IIV/Final/IIV25_Final_project/crossroads.sumocfg"/>
+        <route-files value="/Users/lfiysoudui/Desktop/school/csie/IIV/Final/IIV25_Final_project/crossroads.rou.xml"/>
+        <sumo-net-file value="/Users/lfiysoudui/Desktop/school/csie/IIV/Final/IIV25_Final_project/crossroads.net.xml"/>
     </input>
 
     <output>
-        <output-file value="C:\Users\User\ntu\IIV-Final\crossroads.net.xml"/>
+        <output-file value="/Users/lfiysoudui/Desktop/school/csie/IIV/Final/IIV25_Final_project/crossroads.net.xml"/>
     </output>
 
     <processing>
@@ -31,10 +31,6 @@
     <pedestrian>
         <walkingareas value="0"/>
     </pedestrian>
-
-    <netedit>
-        <new-network value="false"/>
-    </netedit>
 
 </neteditConfiguration>
 -->
@@ -86,79 +82,79 @@
         <lane id=":J_crossroads_11_0" index="0" speed="8.00" length="14.19" shape="-7.20,-1.60 -3.35,-1.05 -0.60,0.60 1.05,3.35 1.60,7.20"/>
     </edge>
 
-    <edge id="-E1" from="J3" to="J_crossroads" priority="-1">
-        <lane id="-E1_0" index="0" speed="13.89" length="32.80" shape="40.00,1.60 7.20,1.60"/>
+    <edge id="E_I" from="J3" to="J_crossroads" priority="-1">
+        <lane id="E_I_0" index="0" speed="13.89" length="32.80" shape="40.00,1.60 7.20,1.60"/>
     </edge>
-    <edge id="-E1.46" from="J_crossroads" to="J2" priority="-1">
-        <lane id="-E1.46_0" index="0" speed="13.89" length="32.80" shape="-7.20,1.60 -40.00,1.60"/>
+    <edge id="E_O" from="J_crossroads" to="J3" priority="-1">
+        <lane id="E_O_0" index="0" speed="13.89" length="32.80" shape="7.20,-1.60 40.00,-1.60"/>
     </edge>
-    <edge id="-E2" from="J5" to="J_crossroads" priority="-1">
-        <lane id="-E2_0" index="0" speed="13.89" length="32.80" shape="1.60,-40.00 1.60,-7.20"/>
+    <edge id="N_I" from="J6" to="J_crossroads" priority="-1">
+        <lane id="N_I_0" index="0" speed="13.89" length="32.80" shape="-1.60,40.00 -1.60,7.20"/>
     </edge>
-    <edge id="-E3" from="J6" to="J_crossroads" priority="-1">
-        <lane id="-E3_0" index="0" speed="13.89" length="32.80" shape="-1.60,40.00 -1.60,7.20"/>
+    <edge id="N_O" from="J_crossroads" to="J6" priority="-1">
+        <lane id="N_O_0" index="0" speed="13.89" length="32.80" shape="1.60,7.20 1.60,40.00"/>
     </edge>
-    <edge id="E1" from="J2" to="J_crossroads" priority="-1">
-        <lane id="E1_0" index="0" speed="13.89" length="32.80" shape="-40.00,-1.60 -7.20,-1.60"/>
+    <edge id="S_I" from="J5" to="J_crossroads" priority="-1">
+        <lane id="S_I_0" index="0" speed="13.89" length="32.80" shape="1.60,-40.00 1.60,-7.20"/>
     </edge>
-    <edge id="E10" from="J_crossroads" to="J3" priority="-1">
-        <lane id="E10_0" index="0" speed="13.89" length="32.80" shape="7.20,-1.60 40.00,-1.60"/>
+    <edge id="S_O" from="J_crossroads" to="J5" priority="-1">
+        <lane id="S_O_0" index="0" speed="13.89" length="32.80" shape="-1.60,-7.20 -1.60,-40.00"/>
     </edge>
-    <edge id="E2" from="J_crossroads" to="J5" priority="-1">
-        <lane id="E2_0" index="0" speed="13.89" length="32.80" shape="-1.60,-7.20 -1.60,-40.00"/>
+    <edge id="W_I" from="J2" to="J_crossroads" priority="-1">
+        <lane id="W_I_0" index="0" speed="13.89" length="32.80" shape="-40.00,-1.60 -7.20,-1.60"/>
     </edge>
-    <edge id="E3" from="J_crossroads" to="J6" priority="-1">
-        <lane id="E3_0" index="0" speed="13.89" length="32.80" shape="1.60,7.20 1.60,40.00"/>
+    <edge id="W_O" from="J_crossroads" to="J2" priority="-1">
+        <lane id="W_O_0" index="0" speed="13.89" length="32.80" shape="-7.20,1.60 -40.00,1.60"/>
     </edge>
 
-    <junction id="J2" type="dead_end" x="-40.00" y="0.00" incLanes="-E1.46_0" intLanes="" shape="-40.00,0.00 -40.00,3.20 -40.00,0.00"/>
-    <junction id="J3" type="dead_end" x="40.00" y="0.00" incLanes="E10_0" intLanes="" shape="40.00,0.00 40.00,-3.20 40.00,0.00"/>
-    <junction id="J5" type="dead_end" x="0.00" y="-40.00" incLanes="E2_0" intLanes="" shape="0.00,-40.00 -3.20,-40.00 0.00,-40.00"/>
-    <junction id="J6" type="dead_end" x="0.00" y="40.00" incLanes="E3_0" intLanes="" shape="0.00,40.00 3.20,40.00 0.00,40.00"/>
-    <junction id="J_crossroads" type="priority" x="0.00" y="0.00" incLanes="-E3_0 -E1_0 -E2_0 E1_0" intLanes=":J_crossroads_0_0 :J_crossroads_1_0 :J_crossroads_12_0 :J_crossroads_3_0 :J_crossroads_4_0 :J_crossroads_5_0 :J_crossroads_6_0 :J_crossroads_7_0 :J_crossroads_13_0 :J_crossroads_9_0 :J_crossroads_10_0 :J_crossroads_11_0" shape="-3.20,7.20 3.20,7.20 3.64,4.98 4.20,4.20 4.98,3.64 5.98,3.31 7.20,3.20 7.20,-3.20 4.98,-3.64 4.20,-4.20 3.64,-4.98 3.31,-5.98 3.20,-7.20 -3.20,-7.20 -3.64,-4.98 -4.20,-4.20 -4.98,-3.64 -5.98,-3.31 -7.20,-3.20 -7.20,3.20 -4.98,3.64 -4.20,4.20 -3.64,4.98 -3.31,5.98">
+    <junction id="J2" type="dead_end" x="-40.00" y="0.00" incLanes="W_O_0" intLanes="" shape="-40.00,0.00 -40.00,3.20 -40.00,0.00"/>
+    <junction id="J3" type="dead_end" x="40.00" y="0.00" incLanes="E_O_0" intLanes="" shape="40.00,0.00 40.00,-3.20 40.00,0.00"/>
+    <junction id="J5" type="dead_end" x="0.00" y="-40.00" incLanes="S_O_0" intLanes="" shape="0.00,-40.00 -3.20,-40.00 0.00,-40.00"/>
+    <junction id="J6" type="dead_end" x="0.00" y="40.00" incLanes="N_O_0" intLanes="" shape="0.00,40.00 3.20,40.00 0.00,40.00"/>
+    <junction id="J_crossroads" type="priority" x="0.00" y="0.00" incLanes="N_I_0 E_I_0 S_I_0 W_I_0" intLanes=":J_crossroads_0_0 :J_crossroads_1_0 :J_crossroads_12_0 :J_crossroads_3_0 :J_crossroads_4_0 :J_crossroads_5_0 :J_crossroads_6_0 :J_crossroads_7_0 :J_crossroads_13_0 :J_crossroads_9_0 :J_crossroads_10_0 :J_crossroads_11_0" shape="-3.20,7.20 3.20,7.20 3.64,4.98 4.20,4.20 4.98,3.64 5.98,3.31 7.20,3.20 7.20,-3.20 4.98,-3.64 4.20,-4.20 3.64,-4.98 3.31,-5.98 3.20,-7.20 -3.20,-7.20 -3.64,-4.98 -4.20,-4.20 -4.98,-3.64 -5.98,-3.31 -7.20,-3.20 -7.20,3.20 -4.98,3.64 -4.20,4.20 -3.64,4.98 -3.31,5.98">
         <request index="0"  response="000000000000" foes="000100010000" cont="0"/>
         <request index="1"  response="000000000000" foes="111100110000" cont="0"/>
-        <request index="2"  response="000011000000" foes="110111110000" cont="1"/>
+        <request index="2"  response="000111000000" foes="110111110000" cont="1"/>
         <request index="3"  response="000010000000" foes="100010000000" cont="0"/>
         <request index="4"  response="000110000111" foes="100110000111" cont="0"/>
         <request index="5"  response="111110000110" foes="111110000110" cont="0"/>
         <request index="6"  response="000000000000" foes="010000000100" cont="0"/>
         <request index="7"  response="000000000000" foes="110000111100" cont="0"/>
-        <request index="8"  response="000000000111" foes="110000110111" cont="1"/>
+        <request index="8"  response="000000000011" foes="110000110111" cont="1"/>
         <request index="9"  response="000000000010" foes="000000100010" cont="0"/>
         <request index="10" response="000111000110" foes="000111100110" cont="0"/>
         <request index="11" response="000110011110" foes="000110111110" cont="0"/>
     </junction>
 
-    <junction id=":J_crossroads_12_0" type="internal" x="-0.96" y="3.20" incLanes=":J_crossroads_2_0 -E2_0" intLanes=":J_crossroads_4_0 :J_crossroads_5_0 :J_crossroads_6_0 :J_crossroads_7_0 :J_crossroads_10_0 :J_crossroads_11_0"/>
-    <junction id=":J_crossroads_13_0" type="internal" x="0.96" y="-3.20" incLanes=":J_crossroads_8_0 -E3_0" intLanes=":J_crossroads_0_0 :J_crossroads_1_0 :J_crossroads_4_0 :J_crossroads_5_0 :J_crossroads_10_0 :J_crossroads_11_0"/>
+    <junction id=":J_crossroads_12_0" type="internal" x="-0.96" y="3.20" incLanes=":J_crossroads_2_0 S_I_0" intLanes=":J_crossroads_4_0 :J_crossroads_5_0 :J_crossroads_6_0 :J_crossroads_7_0 :J_crossroads_10_0 :J_crossroads_11_0"/>
+    <junction id=":J_crossroads_13_0" type="internal" x="0.96" y="-3.20" incLanes=":J_crossroads_8_0 N_I_0" intLanes=":J_crossroads_0_0 :J_crossroads_1_0 :J_crossroads_4_0 :J_crossroads_5_0 :J_crossroads_10_0 :J_crossroads_11_0"/>
 
-    <connection from="-E1" to="E3" fromLane="0" toLane="0" via=":J_crossroads_3_0" dir="r" state="m"/>
-    <connection from="-E1" to="-E1.46" fromLane="0" toLane="0" via=":J_crossroads_4_0" dir="s" state="m"/>
-    <connection from="-E1" to="E2" fromLane="0" toLane="0" via=":J_crossroads_5_0" dir="l" state="m"/>
-    <connection from="-E2" to="E10" fromLane="0" toLane="0" via=":J_crossroads_6_0" dir="r" state="M"/>
-    <connection from="-E2" to="E3" fromLane="0" toLane="0" via=":J_crossroads_7_0" dir="s" state="M"/>
-    <connection from="-E2" to="-E1.46" fromLane="0" toLane="0" via=":J_crossroads_8_0" dir="l" state="m"/>
-    <connection from="-E3" to="-E1.46" fromLane="0" toLane="0" via=":J_crossroads_0_0" dir="r" state="M"/>
-    <connection from="-E3" to="E2" fromLane="0" toLane="0" via=":J_crossroads_1_0" dir="s" state="M"/>
-    <connection from="-E3" to="E10" fromLane="0" toLane="0" via=":J_crossroads_2_0" dir="l" state="m"/>
-    <connection from="E1" to="E2" fromLane="0" toLane="0" via=":J_crossroads_9_0" dir="r" state="m"/>
-    <connection from="E1" to="E10" fromLane="0" toLane="0" via=":J_crossroads_10_0" dir="s" state="m"/>
-    <connection from="E1" to="E3" fromLane="0" toLane="0" via=":J_crossroads_11_0" dir="l" state="m"/>
+    <connection from="E_I" to="N_O" fromLane="0" toLane="0" via=":J_crossroads_3_0" dir="r" state="m"/>
+    <connection from="E_I" to="W_O" fromLane="0" toLane="0" via=":J_crossroads_4_0" dir="s" state="m"/>
+    <connection from="E_I" to="S_O" fromLane="0" toLane="0" via=":J_crossroads_5_0" dir="l" state="m"/>
+    <connection from="N_I" to="W_O" fromLane="0" toLane="0" via=":J_crossroads_0_0" dir="r" state="M"/>
+    <connection from="N_I" to="S_O" fromLane="0" toLane="0" via=":J_crossroads_1_0" dir="s" state="M"/>
+    <connection from="N_I" to="E_O" fromLane="0" toLane="0" via=":J_crossroads_2_0" dir="l" state="m"/>
+    <connection from="S_I" to="E_O" fromLane="0" toLane="0" via=":J_crossroads_6_0" dir="r" state="M"/>
+    <connection from="S_I" to="N_O" fromLane="0" toLane="0" via=":J_crossroads_7_0" dir="s" state="M"/>
+    <connection from="S_I" to="W_O" fromLane="0" toLane="0" via=":J_crossroads_8_0" dir="l" state="m"/>
+    <connection from="W_I" to="S_O" fromLane="0" toLane="0" via=":J_crossroads_9_0" dir="r" state="m"/>
+    <connection from="W_I" to="E_O" fromLane="0" toLane="0" via=":J_crossroads_10_0" dir="s" state="m"/>
+    <connection from="W_I" to="N_O" fromLane="0" toLane="0" via=":J_crossroads_11_0" dir="l" state="m"/>
 
-    <connection from=":J_crossroads_0" to="-E1.46" fromLane="0" toLane="0" dir="r" state="M"/>
-    <connection from=":J_crossroads_1" to="E2" fromLane="0" toLane="0" dir="s" state="M"/>
-    <connection from=":J_crossroads_2" to="E10" fromLane="0" toLane="0" via=":J_crossroads_12_0" dir="l" state="m"/>
-    <connection from=":J_crossroads_12" to="E10" fromLane="0" toLane="0" dir="l" state="M"/>
-    <connection from=":J_crossroads_3" to="E3" fromLane="0" toLane="0" dir="r" state="M"/>
-    <connection from=":J_crossroads_4" to="-E1.46" fromLane="0" toLane="0" dir="s" state="M"/>
-    <connection from=":J_crossroads_5" to="E2" fromLane="0" toLane="0" dir="l" state="M"/>
-    <connection from=":J_crossroads_6" to="E10" fromLane="0" toLane="0" dir="r" state="M"/>
-    <connection from=":J_crossroads_7" to="E3" fromLane="0" toLane="0" dir="s" state="M"/>
-    <connection from=":J_crossroads_8" to="-E1.46" fromLane="0" toLane="0" via=":J_crossroads_13_0" dir="l" state="m"/>
-    <connection from=":J_crossroads_13" to="-E1.46" fromLane="0" toLane="0" dir="l" state="M"/>
-    <connection from=":J_crossroads_9" to="E2" fromLane="0" toLane="0" dir="r" state="M"/>
-    <connection from=":J_crossroads_10" to="E10" fromLane="0" toLane="0" dir="s" state="M"/>
-    <connection from=":J_crossroads_11" to="E3" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":J_crossroads_0" to="W_O" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":J_crossroads_1" to="S_O" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J_crossroads_2" to="E_O" fromLane="0" toLane="0" via=":J_crossroads_12_0" dir="l" state="m"/>
+    <connection from=":J_crossroads_12" to="E_O" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":J_crossroads_3" to="N_O" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":J_crossroads_4" to="W_O" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J_crossroads_5" to="S_O" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":J_crossroads_6" to="E_O" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":J_crossroads_7" to="N_O" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J_crossroads_8" to="W_O" fromLane="0" toLane="0" via=":J_crossroads_13_0" dir="l" state="m"/>
+    <connection from=":J_crossroads_13" to="W_O" fromLane="0" toLane="0" dir="l" state="M"/>
+    <connection from=":J_crossroads_9" to="S_O" fromLane="0" toLane="0" dir="r" state="M"/>
+    <connection from=":J_crossroads_10" to="E_O" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":J_crossroads_11" to="N_O" fromLane="0" toLane="0" dir="l" state="M"/>
 
 </net>
