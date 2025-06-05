@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+    <vType id="humanSlow" accel="2.0" decel="4.5" sigma="0.5"
+           length="5" maxSpeed="20" color="1,0,0"/>   <!-- 20 m/s = 72 km/h -->
+    <vType id="humanMid"  accel="2.0" decel="4.5" sigma="0.5"
+           length="5" maxSpeed="25" color="1,0,0"/>   <!-- 25 m/s -->
+    <vType id="cav"       accel="2.5" decel="4.5" sigma="0"
+           length="5" maxSpeed="33.33" color="0,1,0"/>
+
+    <route id="main" edges="A0B0"/>
+
+    <!-- leader in the right lane -->
+    <vehicle id="slow0" type="humanSlow" route="main"
+             depart="0" departLane="0" departPos="50"/>
+
+    <!-- leader in the left lane, only 5 m ahead of ego -->
+    <vehicle id="mid0"  type="humanMid"  route="main"
+             depart="0" departLane="1" departPos="5"/>
+
+    <!-- controlled vehicle -->
+    <vehicle id="ego0"  type="cav"       route="main"
+             depart="0" departLane="0" departPos="0"/>
+</routes>

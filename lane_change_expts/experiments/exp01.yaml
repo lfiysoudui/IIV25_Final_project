@@ -1,4 +1,3 @@
 sumocfg: ../resources/exp01_network/exp01.sumocfg
-step_length: 0.5               # sec
-cavs:
-  - ego0                       # list of vehicles to control
+step_length: 0.5
+cavs: [ego0]

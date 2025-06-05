@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import argparse, os, yaml, traci
 from pathlib import Path
-from controllers.lccs import LCCS, Params
+from controllers.lccs import UnifiedLC, Params
 
 def main():
     ap = argparse.ArgumentParser()
@@ -22,7 +22,13 @@ def main():
            "-v"]
 
     traci.start(cmd)
-    cavs = {vid: LCCS(vid, Params()) for vid in cfg["cavs"]}
+    p = Params(
+        horizon=cfg.get("horizon", 8),
+        dt=cfg.get("dt", 0.5),
+        replanning_hz=cfg.get("replan_hz", 1),
+        mandatory=Params.mandatory.__class__(**cfg.get("mandatory", {}))
+    )
+    cavs = {vid: UnifiedLC(vid, p) for vid in cfg["cavs"]}
 
     while traci.simulation.getMinExpectedNumber() > 0:
         traci.simulationStep()

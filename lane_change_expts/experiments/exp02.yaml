@@ -1,0 +1,3 @@
+sumocfg: ../resources/exp02_network/exp02.sumocfg
+step_length: 0.5
+cavs: [ego0]

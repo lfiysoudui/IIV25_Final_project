@@ -1,0 +1,10 @@
+<configuration>
+    <input>
+        <net-file value="exp02.net.xml"/>
+        <route-files value="exp02.rou.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="120"/> 
+    </time>
+</configuration>

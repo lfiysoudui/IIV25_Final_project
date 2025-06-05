@@ -2,9 +2,9 @@
 <routes>
     <!-- vehicle types -->
     <vType id="human" accel="2.0" decel="4.5" sigma="0.5"
-           length="5" maxSpeed="22.2"/>   <!-- 80 km/h -->
+           length="5" maxSpeed="22.2" color="1,0,0"/>   <!-- 80 km/h -->
     <vType id="cav" accel="2.5" decel="4.5" sigma="0"
-           length="5" maxSpeed="33.33"/>  <!-- 120 km/h -->
+           length="5" maxSpeed="33.33" color="0,1,0"/>  <!-- 120 km/h -->
 
     <!-- single-edge route -->
     <route id="main" edges="A0B0"/>
