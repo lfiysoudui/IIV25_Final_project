@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 1000-m straight freeway, 2 lanes each direction, vmax ≈ 120 km/h -->
+<net version="1.10">
+    <location netOffset="0,0"
+              convBoundary="0,0,1000,6.4"
+              origBoundary="0,0,1000,6.4"
+              projParameter="!"/>
+
+    <!-- mainline A0 ➜ B0 (forward) -->
+    <edge id="A0B0" from="A0" to="B0" priority="1" numLanes="2" speed="33.33">
+        <lane id="A0B0_0" index="0" speed="33.33" length="1000" shape="0,0 1000,0"/>
+        <lane id="A0B0_1" index="1" speed="33.33" length="1000" shape="0,3.2 1000,3.2"/>
+    </edge>
+
+    <!-- B0 ➜ A0 (reverse) -->
+    <edge id="B0A0" from="B0" to="A0" priority="1" numLanes="2" speed="33.33">
+        <lane id="B0A0_0" index="0" speed="33.33" length="1000" shape="1000,0 0,0"/>
+        <lane id="B0A0_1" index="1" speed="33.33" length="1000" shape="1000,3.2 0,3.2"/>
+    </edge>
+
+    <!-- end nodes -->
+    <junction id="A0" type="dead_end" x="0"   y="0" incLanes="B0A0_0 B0A0_1"/>
+    <junction id="B0" type="dead_end" x="1000" y="0" incLanes="A0B0_0 A0B0_1"/>
+</net>

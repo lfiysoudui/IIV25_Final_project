@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+    <!-- vehicle types -->
+    <vType id="human" accel="2.0" decel="4.5" sigma="0.5"
+           length="5" maxSpeed="22.2"/>   <!-- 80 km/h -->
+    <vType id="cav" accel="2.5" decel="4.5" sigma="0"
+           length="5" maxSpeed="33.33"/>  <!-- 120 km/h -->
+
+    <!-- single-edge route -->
+    <route id="main" edges="A0B0"/>
+
+    <!-- slower leader starts 50 m ahead in lane 0 -->
+    <vehicle id="slow0" type="human" route="main"
+             depart="0" departPos="50" departLane="0"/>
+
+    <!-- ego CAV starts at x=0 m, lane 0 -->
+    <vehicle id="ego0" type="cav" route="main"
+             depart="0" departPos="0" departLane="0"/>
+</routes>
