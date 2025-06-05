@@ -1,4 +1,4 @@
-sumocfg: ../resources/exp04_network/exp04.sumocfg
+sumocfg: ../resources/exp05_network/exp05.sumocfg
 step_length: 0.5
 cavs: [veh1, veh2]
 
