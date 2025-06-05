@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<net version="1.10">
+    <location netOffset="0,0"
+              convBoundary="-40,-40,1040,40"
+              origBoundary="-40,-40,1040,40"
+              projParameter="!"/>
+    <!-- single edge loops back to itself; 4 lanes -->
+    <edge id="loop" from="N0" to="N0" priority="1" numLanes="4" speed="33.33">
+        <!-- circle approximated by polyline (500 m circumference) -->
+        <lane id="loop_0" index="0" length="300" speed="33.33" 
+              shape="0,0 500,0"/>
+        <lane id="loop_1" index="1" length="300" speed="20" 
+              shape="0,3.2 500,3.2"/>
+        <lane id="loop_2" index="2" length="300" speed="25" 
+              shape="0,6.4 500,6.4"/>
+        <lane id="loop_3" index="3" length="300" speed="33.33" 
+              shape="0,9.6 500,9.6"/>
+    </edge>
+    <!-- dummy node -->
+    <junction id="N0" type="dead_end" x="0" y="0"/>
+</net>

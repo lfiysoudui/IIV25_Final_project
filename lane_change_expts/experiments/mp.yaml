@@ -1,0 +1,12 @@
+sumocfg: ../resources/mp_network/mp.sumocfg
+step_length: 0.5
+
+# We'll attach controllers dynamically: any vehicle whose ID starts with "cav"
+cavs: auto   # special token we'll handle in run.py
+
+horizon: 8            # shorter horizon suffices in steady traffic
+
+weights:
+  coop: 0.05
+
+color_cav: true       # easier to see the mix

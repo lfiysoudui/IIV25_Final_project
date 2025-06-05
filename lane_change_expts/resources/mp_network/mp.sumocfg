@@ -1,0 +1,17 @@
+<configuration>
+    <input>
+        <net-file value="mp.net.xml"/>
+        <route-files value="mp.rou.xml"/>
+    </input>
+
+    <time>
+        <begin value="0"/>
+        <end value="3600"/>      <!-- 1-h horizon -->
+    </time>
+
+    <output>
+        <tripinfo-output value="mp_tripinfo.xml"/>
+        <lanechange-output value="mp_lc.xml"/>
+        <fcd-output value="mp_fcd.xml"/>
+    </output>
+</configuration>

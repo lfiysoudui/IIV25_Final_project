@@ -1,0 +1,18 @@
+<routes>
+    <!-- human driver -->
+    <vType id="human" accel="2.0" decel="4.5" sigma="0.5"
+           length="5" maxSpeed="15" color="1,0,0"/>
+
+    <!-- CAV with your controller -->
+    <vType id="cav" accel="2.5" decel="4.5" sigma="0"
+           length="5" maxSpeed="20" color="0,1,0"/>
+
+    <!-- 60 % human, 40 % CAV -->
+    <vTypeDistribution id="mixed" vTypes="human cav" probabilities="0.6 0.4"/>
+
+    <route id="r0" edges="loop"/>
+    <flow id="main0" route="r0" type="mixed" begin="0" end="3600" vehsPerHour="2400" departLane="0" departSpeed="random"/>
+    <flow id="main1" route="r0" type="mixed" begin="0" end="3600" vehsPerHour="300" departLane="1" departSpeed="random"/>
+    <flow id="main2" route="r0" type="mixed" begin="0" end="3600" vehsPerHour="2000" departLane="2" departSpeed="random"/>
+    <flow id="main3" route="r0" type="mixed" begin="0" end="3600" vehsPerHour="1800" departLane="3" departSpeed="random"/>
+</routes>

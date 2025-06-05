@@ -13,3 +13,4 @@ python run.py -c experiments/exp01.yaml
 - exp04: merging scenario with moederate gap (8s predict horizon)
 - exp05: merging scenario with short gap (8s predict horizon)
 - exp06: two lane scenario with small gap to potential leader on target lane (15s predict horizon, more uncontrolled vehicles)
+- mp: 4 lanes, each with different vehicle amount flow. many vehicles, controlled : uncontrolled 0.3 : 0.7.

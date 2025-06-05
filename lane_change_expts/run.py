@@ -32,6 +32,12 @@ def main():
 
     while traci.simulation.getMinExpectedNumber() > 0:
         traci.simulationStep()
+
+        if cfg.get("cavs") == "auto":
+            for vid in traci.vehicle.getIDList():
+                if traci.vehicle.getTypeID(vid) == "cav" and vid not in cavs:
+                    cavs[vid] = UnifiedLC(vid, p)
+
         sim_t = traci.simulation.getTime()
 
         # iterate over *copy* so we can pop finished ones
