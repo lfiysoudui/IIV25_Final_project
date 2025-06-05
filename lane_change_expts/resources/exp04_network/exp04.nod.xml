@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<nodes>
+    <!-- mainline upstream origin -->
+    <node id="A0" x="0"   y="0"    type="dead_end"/>
+
+    <!-- on-ramp origin (50 m south of A0) -->
+    <node id="R0" x="0"   y="-50"  type="dead_end"/>
+
+    <!-- merge point (on-ramp meets mainline) -->
+    <node id="X0" x="380" y="0"    type="priority"/>
+
+    <!-- mainline downstream sink -->
+    <node id="B0" x="500" y="0"    type="dead_end"/>
+</nodes>

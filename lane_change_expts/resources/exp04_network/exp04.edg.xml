@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<edges>
+    <!-- mainline upstream (0 → 350 m) -->
+    <edge id="A0X0" from="A0" to="X0" numLanes="2" speed="33.33"/>
+
+    <!-- mainline downstream (350 → 600 m) -->
+    <edge id="X0B0" from="X0" to="B0" numLanes="2" speed="33.33"/>
+
+    <!-- on-ramp (0 → 350 m, single lane, 25 m/s) -->
+    <edge id="R0X0" from="R0" to="X0" numLanes="1" speed="25.00"/>
+
+    <!-- (optional) reverse mainline for later experiments -->
+    <!-- <edge id="B0X0" from="B0" to="X0" numLanes="2" speed="33.33"/> -->
+</edges>

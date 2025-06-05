@@ -4,5 +4,3 @@ cavs: [ego0]
 
 # Override controller parameters for Exp 3
 horizon: 15        # 15 s prediction horizon
-replan_hz: 1       # 1 Hz (same as paper)
-

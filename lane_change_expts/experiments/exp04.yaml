@@ -1,0 +1,10 @@
+sumocfg: ../resources/exp04_network/exp04.sumocfg
+step_length: 0.5
+cavs: [veh1, veh2]
+
+horizon: 15              # 15-s horizon (paper)
+
+# optional tuning
+weights:
+  coop: 0.05             # emphasise cooperation
+

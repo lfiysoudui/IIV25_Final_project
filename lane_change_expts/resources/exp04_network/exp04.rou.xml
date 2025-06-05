@@ -1,0 +1,15 @@
+<routes>
+    <vType id="cavFast" accel="2.5" decel="4.5" sigma="0" length="5" maxSpeed="33.33" color="0,1,0"/>
+    <vType id="cavMid"  accel="2.5" decel="4.5" sigma="0" length="5" maxSpeed="25.00" color="0,1,0"/>
+
+    <route id="main" edges="A0X0 X0B0"/>
+    <route id="ramp" edges="R0X0 X0B0"/>
+
+    <!-- merging vehicle on ramp: x=0 m, v=25 m/s -->
+    <vehicle id="veh1" type="cavMid" route="ramp"
+             depart="0" departLane="0" departPos="30"/>
+
+    <!-- mainline vehicle: lane0, 30 m upstream of merge, v=30 m/s -->
+    <vehicle id="veh2" type="cavFast" route="main"
+             depart="0" departLane="0" departPos="0"/>
+</routes>
