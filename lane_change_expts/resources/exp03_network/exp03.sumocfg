@@ -1,0 +1,10 @@
+<configuration>
+    <input>
+        <net-file value="exp03.net.xml"/>
+        <route-files value="exp03.rou.xml"/>
+    </input>
+    <time>
+        <begin value="0"/>
+        <end value="60"/>     <!-- 300 m @ 30 m/s ≈ 10 s -->
+    </time>
+</configuration>
