@@ -1,0 +1,12 @@
+sumocfg: ../resources/exp06_network/exp06.sumocfg
+step_length: 0.5
+
+# Two controlled CAVs in this scenario (veh3 is ego, veh2 cooperates)
+cavs: [veh3, veh2]
+
+# Prediction horizon 15 s, 1 Hz replanning
+horizon: 15
+
+# Raise cooperation weight to make ego care about the follower
+weights:
+  coop: 0.05

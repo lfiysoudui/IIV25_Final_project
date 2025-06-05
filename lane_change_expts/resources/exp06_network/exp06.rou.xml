@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<routes>
+    <!-- vehicle types -->
+    <vType id="cavFast" accel="2.5" decel="4.5" sigma="0" length="5" maxSpeed="33.33"/>
+    <vType id="cavMid"  accel="2.5" decel="4.5" sigma="0" length="5" maxSpeed="25.00"/>
+    <vType id="cavSlow" accel="2.5" decel="4.5" sigma="0" length="5" maxSpeed="30.00"/>
+
+    <!-- approaching follower modelled with IDM -->
+    <vType id="idm30" carFollowModel="IDM" accel="1.4" decel="4.0" sigma="0.5"
+           length="5" minGap="2" tau="1.0" maxSpeed="30.00"/>
+
+    <route id="main" edges="A0B0"/>
+
+    <!-- vehicle 1 – right lane leader, 20 m ahead, 30 m s-¹ -->
+    <vehicle id="veh1" type="cavFast" route="main"
+             depart="0" departLane="0" departPos="40" speedFactor="1.0" color="1,0,0"/>
+
+    <!-- vehicle 2 – left lane leader, 20 m ahead, 25 m s-¹ -->
+    <vehicle id="veh2" type="cavMid" route="main"
+             depart="0" departLane="1" departPos="40" speedFactor="1.0" color="1,0,0"/>
+
+    <!-- controlled vehicle 3 – starts in right lane, 25 m s-¹ -->
+    <vehicle id="veh3" type="cavMid" route="main"
+             depart="0" departLane="0" departPos="20" speedFactor="1.0" color="0,1,0"/>
+
+    <!-- vehicle 4 – follower in left lane, 10 m behind ego, 30 m s-¹, IDM -->
+    <vehicle id="veh4" type="idm30" route="main"
+             depart="0" departLane="1" departPos="10" speedFactor="1.0" color="1,0,0"/>
+</routes>
